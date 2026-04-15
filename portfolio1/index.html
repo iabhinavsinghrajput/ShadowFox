@@ -1,0 +1,644 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Abhinav Kumar | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Abhinav Kumar – Full-Stack Web Developer specializing in MERN stack, Java, Python, and modern web technologies."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Loader -->
+    <div id="loader" class="loader">
+      <div class="loader-content">
+        <div class="loader-logo">AK</div>
+        <h1>Abhinav Kumar</h1>
+        <p class="loader-subtitle">Loading Portfolio...</p>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <div id="progress-text">0%</div>
+      </div>
+    </div>
+
+    <!-- Particles & Silk Background -->
+    <div class="silk-backdrop">
+      <div class="silk-fold"></div>
+    </div>
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <span class="logo-icon">AK</span>
+        <span class="logo-text">Abhinav Kumar</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" data-aos="fade-up" data-aos-duration="1000">
+
+      <h1 data-aos="fade-up" data-aos-delay="300">
+        Hi, I'm <span class="gradient-text">Abhinav Kumar</span>
+      </h1>
+
+      <p class="hero-description" data-aos="fade-up" data-aos-delay="500">
+        Crafting elegant digital experiences with modern web technologies
+      </p>
+      <div class="buttons" data-aos="fade-up" data-aos-delay="600">
+        <a
+          href="assets/myresume.pdf"
+          target="_blank"
+          class="btn btn-primary"
+          id="btn-resume"
+        >
+          <i class="fa-solid fa-download"></i> Download Resume
+        </a>
+        <a href="#contact" class="btn btn-outline" id="btn-contact">
+          <i class="fa-solid fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+      <div
+        class="hero-scroll-indicator"
+        data-aos="fade-up"
+        data-aos-delay="800"
+      >
+        <span>Scroll Down</span>
+        <div class="scroll-arrow">
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section
+      id="about"
+      class="about-section"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="section-header">
+
+        <h2>About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-container">
+        <div
+          class="about-image-wrapper"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <div class="about-image-frame">
+            <img src="assets/myphoto.jpeg" alt="Abhinav Kumar" />
+            <div class="about-image-glow"></div>
+          </div>
+          <div class="about-experience-badge">
+            <span class="exp-number">3rd</span>
+            <span class="exp-label">Year B.Tech IT</span>
+          </div>
+        </div>
+        <div class="about-text" data-aos="fade-left" data-aos-delay="300">
+          <h3>A passionate developer who loves to create</h3>
+          <p>
+            I am a third-year B.Tech student in Information Technology with a
+            strong passion for software development and building impactful
+            digital solutions. I have hands-on experience in full-stack web
+            development using the <strong>MERN stack</strong>, including
+            React.js, Node.js, Express.js, and MongoDB.
+          </p>
+          <p>
+            I possess a solid foundation in
+            <strong>Data Structures and Algorithms</strong>, along with
+            proficiency in programming languages such as Java, Python, and C. I
+            enjoy solving complex problems and continuously improving my logical
+            thinking through consistent practice.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section
+      id="skills"
+      class="skills-section"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="section-header">
+
+        <h2>Skills & Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-categories">
+        <!-- Languages -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+          <h3><i class="fa-solid fa-code"></i> Languages</h3>
+          <div class="skill-items">
+            <div class="skill-chip"><i class="fa-brands fa-java"></i> Java</div>
+            <div class="skill-chip">
+              <i class="fa-brands fa-python"></i> Python
+            </div>
+            <div class="skill-chip"><i class="fa-solid fa-c"></i> C</div>
+            <div class="skill-chip">
+              <i class="fa-brands fa-js"></i> JavaScript
+            </div>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+          <h3><i class="fa-solid fa-palette"></i> Frontend</h3>
+          <div class="skill-items">
+            <div class="skill-chip">
+              <i class="fa-brands fa-html5"></i> HTML
+            </div>
+            <div class="skill-chip">
+              <i class="fa-brands fa-css3-alt"></i> CSS
+            </div>
+            <div class="skill-chip">
+              <i class="fa-brands fa-react"></i> React
+            </div>
+            <div class="skill-chip">
+              <i class="fa-brands fa-bootstrap"></i> Bootstrap
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-palette"></i> Tailwind
+            </div>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+          <h3><i class="fa-solid fa-server"></i> Backend</h3>
+          <div class="skill-items">
+            <div class="skill-chip">
+              <i class="fa-brands fa-node-js"></i> Node.js
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-bolt"></i> Express
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-database"></i> MongoDB
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-database"></i> MySQL
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & CS Fundamentals -->
+        <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+          <h3><i class="fa-solid fa-tools"></i> Tools & CS Fundamentals</h3>
+          <div class="skill-items">
+            <div class="skill-chip">
+              <i class="fa-brands fa-github"></i> GitHub
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-paper-plane"></i> Postman
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-diagram-project"></i> DSA
+            </div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-database"></i> DBMS
+            </div>
+            <div class="skill-chip"><i class="fa-solid fa-desktop"></i> OS</div>
+            <div class="skill-chip">
+              <i class="fa-solid fa-network-wired"></i> CN
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      id="projects"
+      class="projects-section"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="section-header">
+
+        <h2>Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="project-grid">
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="assets/meridian.png" alt="Meridian" />
+            <div>
+              <a
+                href="https://meridian-b8dk.onrender.com"
+                target="_blank"
+                aria-label="View Meridian live demo"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Meridian</h3>
+            <p>
+              A full-stack web application for exploring, listing, and booking
+              unique stay destinations worldwide with user auth and dynamic
+              listings.
+            </p>
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>MongoDB</span>
+              <span>EJS</span>
+            </div>
+            <a
+              href="https://meridian-b8dk.onrender.com"
+              target="_blank"
+              class="project-link"
+              id="project-link-meridian"
+            >
+              Live Demo <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-image">
+            <img src="assets/currencyconverter.png" alt="Currency Converter" />
+            <div>
+              <a
+                href="https://iabhinavsinghrajput.github.io/Currency-Converter/"
+                target="_blank"
+                aria-label="View Currency Converter live demo"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Currency Converter</h3>
+            <p>
+              A simple, elegant currency converter application for real-time
+              exchange rate calculations.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a
+              href="https://iabhinavsinghrajput.github.io/Currency-Converter/"
+              target="_blank"
+              class="project-link"
+              id="project-link-currency"
+            >
+              Live Demo <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-image">
+            <img src="assets/calculator.png" alt="Calculator" />
+            <div>
+              <a
+                href="https://calqlatorr.netlify.app/"
+                target="_blank"
+                aria-label="View Calculator live demo"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Calculator</h3>
+            <p>
+              A simple yet powerful calculator application with a clean, modern
+              UI.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a
+              href="https://calqlatorr.netlify.app/"
+              target="_blank"
+              class="project-link"
+              id="project-link-calculator"
+            >
+              Live Demo <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-image">
+            <img src="assets/tic-tac-toe.png" alt="Tic-Tac-Toe" />
+            <div>
+              <a
+                href="https://iabhinavsinghrajput.github.io/Tic-Tac-Toe-Game/"
+                target="_blank"
+                aria-label="View Tic-Tac-Toe live demo"
+              >
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Tic-Tac-Toe Game</h3>
+            <p>
+              A classic Tic-Tac-Toe game with an interactive and polished
+              interface.
+            </p>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <a
+              href="https://iabhinavsinghrajput.github.io/Tic-Tac-Toe-Game/"
+              target="_blank"
+              class="project-link"
+              id="project-link-tictactoe"
+            >
+              Live Demo <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section
+      id="certifications"
+      class="certifications-section"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="section-header">
+
+        <h2>Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-icon">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/SAP_2011_logo.svg/1920px-SAP_2011_logo.svg.png"
+              alt="SAP"
+            />
+          </div>
+          <div class="cert-info">
+            <h3>SAP S/4HANA Development Training</h3>
+            <p class="cert-issuer">SAP</p>
+            <span class="cert-date"
+              ><i class="fa-regular fa-calendar"></i> August 2025</span
+            >
+            <a
+              href="assets/sapTraning.pdf"
+              target="_blank"
+              class="cert-link"
+              id="cert-link-sap"
+            >
+              View Certificate
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="cert-icon">
+            <img src="assets/ardentlogo.png" alt="Ardent" />
+          </div>
+          <div class="cert-info">
+            <h3>Android App Development Training</h3>
+            <p class="cert-issuer">Ardent</p>
+            <span class="cert-date"
+              ><i class="fa-regular fa-calendar"></i> February 2025</span
+            >
+            <a
+              href="assets/BCT-Android.pdf"
+              target="_blank"
+              class="cert-link"
+              id="cert-link-android"
+            >
+              View Certificate
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-icon">
+            <img src="assets/ardentlogo.png" alt="Ardent" />
+          </div>
+          <div class="cert-info">
+            <h3>MEAN Full Stack Web Development Training</h3>
+            <p class="cert-issuer">Ardent</p>
+            <span class="cert-date"
+              ><i class="fa-regular fa-calendar"></i> July 2025</span
+            >
+            <a
+              href="assets/BCT-Mean.pdf"
+              target="_blank"
+              class="cert-link"
+              id="cert-link-mean"
+            >
+              View Certificate
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cert-icon">
+            <img src="assets/ardentlogo.png" alt="Ardent" />
+          </div>
+          <div class="cert-info">
+            <h3>Industrial Visit</h3>
+            <p class="cert-issuer">Ardent</p>
+            <span class="cert-date"
+              ><i class="fa-regular fa-calendar"></i> September 2025</span
+            >
+            <a
+              href="assets/Industrial-Visit.pdf"
+              target="_blank"
+              class="cert-link"
+              id="cert-link-industrial"
+            >
+              View Certificate
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-icon">
+            <img src="assets/IIT_Kharagpur_Logo.svg.png" alt="IIT Kharagpur" />
+          </div>
+          <div class="cert-info">
+            <h3>Programming in Java</h3>
+            <p class="cert-issuer">NPTEL(IIT Kharagpur)</p>
+            <span class="cert-date"
+              ><i class="fa-regular fa-calendar"></i> June 2025</span
+            >
+            <a
+              href="assets/Programming-In-Java.pdf"
+              target="_blank"
+              class="cert-link"
+              id="cert-link-java"
+            >
+              View Certificate
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="cert-icon">
+            <img src="assets/LOGO_EduSkills.png" alt="EduSkills" />
+          </div>
+          <div class="cert-info">
+            <h3>AI-ML Virtual Internship</h3>
+            <p class="cert-issuer">AICTE EduSkills</p>
+            <span class="cert-date"
+              ><i class="fa-regular fa-calendar"></i> September 2025</span
+            >
+            <a
+              href="assets/EduSkills-Internship-certificate.pdf"
+              target="_blank"
+              class="cert-link"
+              id="cert-link-aiml"
+            >
+              View Certificate
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="cert-icon">
+            <img src="assets/gfg-gg-logo.svg" alt="GeeksforGeeks" />
+          </div>
+          <div class="cert-info">
+            <h3>160 Days of Problem Solving</h3>
+            <p class="cert-issuer">GeeksforGeeks</p>
+            <span class="cert-date"
+              ><i class="fa-regular fa-calendar"></i> September 2025</span
+            >
+            <a
+              href="assets/gfg-Certificate.pdf"
+              target="_blank"
+              class="cert-link"
+              id="cert-link-gfg"
+            >
+              View Certificate
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      id="contact"
+      class="contact-section"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="section-header">
+
+        <h2>Let's Connect</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="contact-description">
+        I'm always open to discussing new projects, creative ideas, or
+        opportunities to be part of your vision.
+      </p>
+
+      <div class="social-icons">
+        <a
+          href="https://www.linkedin.com/in/abhinav-kumar-a1ab1b27b/"
+          target="_blank"
+          class="icon-card"
+          id="social-linkedin"
+          aria-label="LinkedIn"
+        >
+          <div class="icon-bg linkedin-bg"></div>
+          <div class="icon"><i class="fa-brands fa-linkedin-in"></i></div>
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="mailto:abhinavrajput110@gmail.com"
+          class="icon-card"
+          id="social-email"
+          aria-label="Email"
+        >
+          <div class="icon-bg email-bg"></div>
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <span>Gmail</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-logo">AK</div>
+        <p class="footer-text">
+          Designed & Built by <span class="gradient-text">Abhinav Kumar</span>
+        </p>
+        <p class="footer-copyright">&copy; 2026 All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
