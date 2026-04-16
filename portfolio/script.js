@@ -24,7 +24,7 @@
   }, speed);
 })();
 
-// ─── 3. PARTICLES BACKGROUND ────────────────────
+// ─── 2. PARTICLES BACKGROUND ────────────────────
 function getParticlesConfig() {
   return {
     particles: {
@@ -70,7 +70,7 @@ if (window.tsParticles) {
   tsParticles.load("particles", getParticlesConfig());
 }
 
-// ─── 4. MOBILE MENU ─────────────────────────────
+// ─── 3. MOBILE MENU ─────────────────────────────
 (function initMobileMenu() {
   const toggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
@@ -93,7 +93,7 @@ if (window.tsParticles) {
   });
 })();
 
-// ─── 5. CONSOLIDATED SCROLL HANDLER ─────────────
+// ─── 4. CONSOLIDATED SCROLL HANDLER ─────────────
 (function initScrollHandler() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
@@ -106,7 +106,7 @@ if (window.tsParticles) {
   function update() {
     const scrollY = window.scrollY;
     
-    // 5a. Scroll Spy
+    // Scroll Spy
     const spyScrollY = scrollY + 120;
     sections.forEach((section) => {
       const top = section.offsetTop;
@@ -123,21 +123,21 @@ if (window.tsParticles) {
       }
     });
 
-    // 5b. Navbar Scroll
+    //  Navbar Scroll
     if (scrollY > 50) {
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
     }
 
-    // 5c. Back To Top
+    //  Back To Top
     if (scrollY > 500) {
       if (backToTopBtn) backToTopBtn.classList.add("visible");
     } else {
       if (backToTopBtn) backToTopBtn.classList.remove("visible");
     }
 
-    // 5d. Scroll Progress Bar
+    // Scroll Progress Bar
     const winScroll = document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     const scrolled = (winScroll / height) * 100;
