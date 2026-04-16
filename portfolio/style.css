@@ -1,5 +1,5 @@
 /* ============================================================
-   0. CSS CUSTOM PROPERTIES (DESIGN TOKENS)
+   0. CSS CUSTOM PROPERTIES
    ============================================================ */
 :root {
   /* Font */
@@ -7,9 +7,9 @@
   --font-mono: 'Fira Code', 'Courier New', monospace;
 
   /* Accent colors - Inspired by Deep Red Silk */
-  --accent-1: #c80000;   /* Crimson Red */
-  --accent-2: #800000;   /* Deep Maroon */
-  --accent-3: #1a1a1a;   /* Onyx Black */
+  --accent-1: #c80000;   
+  --accent-2: #800000;   
+  --accent-3: #1a1a1a;  
   --gradient-primary: linear-gradient(135deg, var(--accent-1), var(--accent-2));
   --gradient-accent: linear-gradient(135deg, #444, #111);
   --gradient-full: linear-gradient(135deg, var(--accent-1), var(--accent-2), #440000);
