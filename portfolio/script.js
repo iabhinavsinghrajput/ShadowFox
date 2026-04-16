@@ -1,7 +1,3 @@
-/* =============================================
-   script.js – Portfolio Logic
-   ============================================= */
-
 // ─── 1. LOADER ──────────────────────────────────
 (function startLoader() {
   const progressLine = document.querySelector(".progress");
