@@ -74,12 +74,14 @@ if (window.tsParticles) {
 (function initMobileMenu() {
   const toggle = document.getElementById("menu-toggle");
   const navLinks = document.getElementById("nav-links");
+  const navbar = document.getElementById("navbar");
   const links = document.querySelectorAll(".nav-link");
 
-  if (toggle) {
+  if (toggle && navbar) {
     toggle.addEventListener("click", () => {
       toggle.classList.toggle("active");
       navLinks.classList.toggle("active");
+      navbar.classList.toggle("active");
     });
   }
 
@@ -88,6 +90,7 @@ if (window.tsParticles) {
       if (navLinks.classList.contains("active")) {
         navLinks.classList.remove("active");
         toggle.classList.remove("active");
+        navbar.classList.remove("active");
       }
     });
   });
