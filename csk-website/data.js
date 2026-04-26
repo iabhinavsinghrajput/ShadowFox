@@ -40,15 +40,42 @@ const cskData = {
         { date: "Apr 11, 2026", opponent: "DC", venue: "M.A. Chidambaram Stadium, Chennai", status: "Result", cskScore: "212/2", oppScore: "189", result: "CSK won by 23 runs" },
         { date: "Apr 14, 2026", opponent: "KKR", venue: "M.A. Chidambaram Stadium, Chennai", status: "Result", cskScore: "192/5", oppScore: "160/7", result: "CSK won by 32 runs" },
         { date: "Apr 18, 2026", opponent: "SRH", venue: "Rajiv Gandhi International Stadium, Hyderabad", status: "Result", cskScore: "184/8", oppScore: "194/9", result: "SRH won by 10 runs" },
-        { date: "Apr 23, 2026", opponent: "MI", venue: "Wankhede Stadium, Mumbai", status: "Result", cskScore: "207/6", oppScore: "104", result: "CSK won by 103 runs" },
-        { date: "Apr 26, 2026", opponent: "GT", venue: "M.A. Chidambaram Stadium, Chennai", status: "Upcoming", cskScore: "-", oppScore: "-", time: "Today, 3:30 PM" },
-        { date: "May 2, 2026", opponent: "MI", venue: "M.A. Chidambaram Stadium, Chennai", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM" },
-        { date: "May 5, 2026", opponent: "DC", venue: "Arun Jaitley Stadium, Delhi", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM" },
-        { date: "May 10, 2026", opponent: "LSG", venue: "M.A. Chidambaram Stadium, Chennai", status: "Upcoming", cskScore: "-", oppScore: "-", time: "3:30 PM" },
-        { date: "May 15, 2026", opponent: "LSG", venue: "Ekana Cricket Stadium, Lucknow", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM" },
-        { date: "May 18, 2026", opponent: "SRH", venue: "M.A. Chidambaram Stadium, Chennai", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM" },
-        { date: "May 21, 2026", opponent: "GT", venue: "Narendra Modi Stadium, Ahmedabad", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM" },
-    ]
+        { date: "Apr 23, 2026", opponent: "MI", venue: "Wankhede Stadium, Mumbai", status: "Result", cskScore: "207/6", oppScore: "104/10", result: "CSK won by 103 runs" },
+        { date: "Apr 26, 2026", opponent: "GT", venue: "M.A. Chidambaram Stadium, Chennai", status: "Result", cskScore: "158/7", oppScore: "162/2", result: "Gujarat Titans won by 8 wkts" },
+        { date: "May 2, 2026", opponent: "MI", venue: "M.A. Chidambaram Stadium, Chennai", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM IST" },
+        { date: "May 5, 2026", opponent: "DC", venue: "Arun Jaitley Stadium, Delhi", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM IST" },
+        { date: "May 10, 2026", opponent: "LSG", venue: "M.A. Chidambaram Stadium, Chennai", status: "Upcoming", cskScore: "-", oppScore: "-", time: "3:30 PM IST" },
+        { date: "May 15, 2026", opponent: "LSG", venue: "Ekana Cricket Stadium, Lucknow", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM IST" },
+        { date: "May 18, 2026", opponent: "SRH", venue: "M.A. Chidambaram Stadium, Chennai", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM IST" },
+        { date: "May 21, 2026", opponent: "GT", venue: "Narendra Modi Stadium, Ahmedabad", status: "Upcoming", cskScore: "-", oppScore: "-", time: "7:30 PM IST" },
+    ],
+    teamStats: {
+        titles: 5,
+        finalAppearances: 10,
+        winPercentage: "58.6%",
+        totalMatches: 225,
+        highestTotal: "246/5",
+        lowestTotal: "79",
+        records: [
+            { title: "Most Runs", player: "Suresh Raina", value: "5529" },
+            { title: "Most Wickets", player: "Dwayne Bravo", value: "154" },
+            { title: "Most Matches", player: "MS Dhoni", value: "250+" }
+        ]
+    },
+    liveMatch: {
+        isLive: true,
+        opponent: "MI",
+        venue: "M.A. Chidambaram Stadium",
+        overs: "14.2",
+        cskScore: "138/3",
+        lastBall: "4",
+        recentBalls: ["1", "4", "WD", "2", "6", "W"],
+        batsmen: [
+            { name: "Ruturaj Gaikwad", runs: "64", balls: "42" },
+            { name: "Shivam Dube", runs: "12", balls: "8" }
+        ],
+        bowler: { name: "Jasprit Bumrah", figures: "2.2-0-18-1" }
+    }
 };
 
 // Export for usage in other files

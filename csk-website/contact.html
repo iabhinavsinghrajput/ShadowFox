@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CSK HUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        :root {
+            --csk-yellow: #ffcb05;
+            --bg-primary: #0a0a0a;
+            --bg-card: rgba(255, 255, 255, 0.05);
+            --glass-border: rgba(255, 255, 255, 0.1);
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0b0;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .contact-header {
+            padding: 100px 5% 4rem;
+            text-align: center;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            border-bottom: 1px solid var(--glass-border);
+        }
+
+        .highlight { color: var(--csk-yellow); }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 5%;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        /* Quick Info Bar */
+        .quick-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        .info-box {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 15px;
+            border: 1px solid var(--glass-border);
+        }
+
+        .info-box i {
+            color: var(--csk-yellow);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .contact-list li {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+        }
+
+        .contact-list li:last-child { border-bottom: none; }
+
+        .item-number {
+            background: var(--csk-yellow);
+            color: #000;
+            min-width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 0.85rem;
+        }
+
+        .item-text {
+            color: var(--text-secondary);
+            font-size: 1rem;
+        }
+
+        .item-text strong {
+            color: var(--text-primary);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-card { padding: 1.5rem; }
+            .contact-header h1 { font-size: 2rem; }
+            .quick-info { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>CSK <span class="highlight">HUB</span></h1>
+                </a>
+            </div>
+            <img src="https://www.chennaisuperkings.com/assets/images/csk_logo_withOutGradient.png" alt="CSK Logo"
+                class="center-logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html">Latest News</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="roster.html">Team</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="index.html#fanzone">Fan Zone</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="contact-header">
+        <h1>Contact <span class="highlight">Support</span></h1>
+        <p>Get in touch with the CSK HUB team for help and inquiries.</p>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-card">
+            
+            <div class="quick-info">
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <div>cskhub@gmail.com</div>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>+91-XXXXXXXXXX</div>
+                </div>
+            </div>
+
+            <ul class="contact-list">
+                <li>
+                    <span class="item-number">01</span>
+                    <span class="item-text"><strong>General Queries</strong> For any queries, concerns, or support related to the Event, users may contact the Organiser through the official communication channels.</span>
+                </li>
+                <li>
+                    <span class="item-number">02</span>
+                    <span class="item-text"><strong>Support Hours</strong> Customer support hours are typically from 10:00 AM to 6:00 PM (IST) on working days.</span>
+                </li>
+                <li>
+                    <span class="item-number">03</span>
+                    <span class="item-text"><strong>Response Time</strong> The Organiser will make reasonable efforts to respond to all queries within 2–3 business days.</span>
+                </li>
+                <li>
+                    <span class="item-number">04</span>
+                    <span class="item-text"><strong>Reporting Issues</strong> Any complaints or grievances should be clearly described with relevant details such as ticket ID, date, and issue faced.</span>
+                </li>
+                <li>
+                    <span class="item-number">05</span>
+                    <span class="item-text"><strong>Partnerships</strong> For partnership, sponsorship, or business-related inquiries, please use our official email address.</span>
+                </li>
+                <li>
+                    <span class="item-number">06</span>
+                    <span class="item-text"><strong>Event Emergencies</strong> In case of emergencies during the Event, users are advised to approach the nearest help desk or security personnel at the Stadium.</span>
+                </li>
+                <li>
+                    <span class="item-number">07</span>
+                    <span class="item-text"><strong>Data Consent</strong> By contacting support, users consent to the use of their provided information for resolving their query.</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://twitter.com/chennaiipl" class="icon-circle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/chennaiipl" class="icon-circle" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/chennaisuperkings" class="icon-circle" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 All Rights Reserved by CSK HUB
+            </div>
+            <div class="footer-links">
+                <a href="term.html">Terms & conditions</a> | 
+                <a href="contact.html">Contact</a> | 
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

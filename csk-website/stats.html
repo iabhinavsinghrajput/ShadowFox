@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Stats & Records - Official Fan Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 120px 5% 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #111 100%);
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 5%;
+        }
+        .record-card {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+        .record-card h3 {
+            color: var(--csk-yellow);
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--glass-border);
+            padding-bottom: 0.5rem;
+        }
+        .record-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        .record-label { color: var(--text-secondary); }
+        .record-value { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><h1>CSK <span class="highlight">HUB</span></h1></a>
+            </div>
+            <img src="https://www.chennaisuperkings.com/assets/images/csk_logo_withOutGradient.png" alt="CSK Logo" class="center-logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#news">Latest News</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="roster.html">Team</a></li>
+                <li><a href="stats.html" class="active">Stats</a></li>
+                <li><a href="index.html#fanzone">Fan Zone</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1>Team <span class="highlight">Records</span></h1>
+        <p>The numbers behind the dominance of the Yellow Army.</p>
+    </header>
+
+    <!-- Records Section -->
+    <section class="stats-grid">
+        <div class="record-card animate-up">
+            <h3>IPL Milestones</h3>
+            <div class="record-item"><span class="record-label">Titles</span><span class="record-value">5 (2010, 11, 18, 21, 23)</span></div>
+            <div class="record-item"><span class="record-label">Playoff Appearances</span><span class="record-value">12</span></div>
+            <div class="record-item"><span class="record-label">Final Appearances</span><span class="record-value">10</span></div>
+            <div class="record-item"><span class="record-label">Fair Play Awards</span><span class="record-value">6</span></div>
+        </div>
+
+        <div class="record-card animate-up delay-1">
+            <h3>Batting Records</h3>
+            <div class="record-item"><span class="record-label">Most Runs</span><span class="record-value">Suresh Raina (5,529)</span></div>
+            <div class="record-item"><span class="record-label">Highest Score</span><span class="record-value">Murali Vijay (127)</span></div>
+            <div class="record-item"><span class="record-label">Most Sixes</span><span class="record-value">MS Dhoni (209+)</span></div>
+            <div class="record-item"><span class="record-label">Most Fifties</span><span class="record-value">Suresh Raina (33)</span></div>
+        </div>
+
+        <div class="record-card animate-up delay-2">
+            <h3>Bowling Records</h3>
+            <div class="record-item"><span class="record-label">Most Wickets</span><span class="record-value">Dwayne Bravo (154)</span></div>
+            <div class="record-item"><span class="record-label">Best Figures</span><span class="record-value">Ravindra Jadeja (5/16)</span></div>
+            <div class="record-item"><span class="record-label">Most Dot Balls</span><span class="record-value">R Ashwin (900+)</span></div>
+            <div class="record-item"><span class="record-label">Hat-tricks</span><span class="record-value">L Balaji, Makhaya Ntini</span></div>
+        </div>
+
+        <div class="record-card animate-up delay-3">
+            <h3>Team Highs & Lows</h3>
+            <div class="record-item"><span class="record-label">Highest Total</span><span class="record-value">246/5 vs RR</span></div>
+            <div class="record-item"><span class="record-label">Lowest Total</span><span class="record-value">79 vs MI</span></div>
+            <div class="record-item"><span class="record-label">Biggest Win (Runs)</span><span class="record-value">97 Runs vs KXIP</span></div>
+            <div class="record-item"><span class="record-label">Biggest Win (Wkts)</span><span class="record-value">10 Wickets (2 Times)</span></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://twitter.com/chennaiipl" class="icon-circle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/chennaiipl" class="icon-circle" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/chennaisuperkings" class="icon-circle" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 All Rights Reserved by CSK HUB
+            </div>
+            <div class="footer-links">
+                <a href="term.html">Terms & conditions</a> | 
+                <a href="contact.html">Contact</a> | 
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

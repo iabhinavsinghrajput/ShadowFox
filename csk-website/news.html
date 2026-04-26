@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News - CSK Official Fan Hub</title>
+    <meta name="description" content="Latest news, match reports, and updates from the Chennai Super Kings camp.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .page-header {
+            padding: 120px 5% 3rem;
+            text-align: center;
+            background: linear-gradient(135deg, var(--bg-primary) 0%, #111 100%);
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .page-header h1 {
+            font-size: 3rem;
+            color: var(--text-primary);
+        }
+        .news-page-grid {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .news-card-lg {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(10px);
+        }
+        .news-card-lg:hover {
+            transform: translateY(-6px);
+            border-color: var(--csk-yellow);
+            box-shadow: 0 12px 40px rgba(250, 219, 20, 0.15);
+        }
+        .news-card-lg .news-image {
+            width: 100%;
+            height: 160px;
+            overflow: hidden;
+        }
+        .news-card-lg .news-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .news-card-lg:hover .news-image img {
+            transform: scale(1.05);
+        }
+        .news-card-lg .news-content {
+            padding: 1.2rem;
+        }
+        .news-card-lg .news-tag {
+            display: inline-block;
+            background: var(--csk-yellow);
+            color: #000;
+            font-size: 0.7rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.25rem 0.8rem;
+            border-radius: 20px;
+            margin-bottom: 0.4rem;
+        }
+        .news-card-lg h3 {
+            font-size: 1.15rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+        .news-card-lg p {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
+        }
+        .news-card-lg .read-more {
+            color: var(--csk-yellow);
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: gap 0.3s ease;
+        }
+        .news-card-lg .read-more:hover {
+            gap: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar scrolled" id="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><h1>CSK <span class="highlight">HUB</span></h1></a>
+            </div>
+            <img src="https://www.chennaisuperkings.com/assets/images/csk_logo_withOutGradient.png" alt="CSK Logo" class="center-logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="news.html" class="active">Latest News</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="roster.html">Team</a></li>
+                <li><a href="stats.html">Stats</a></li>
+                <li><a href="index.html#fanzone">Fan Zone</a></li>
+            </ul>
+            <div class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1>Latest <span class="highlight">News</span></h1>
+        <p>All the latest updates from the Yellow Army's camp</p>
+    </header>
+
+    <!-- News Grid -->
+    <div class="news-page-grid">
+
+        <!-- Card 1 -->
+        <article class="news-card-lg animate-up">
+            <div class="news-image">
+                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202604/akeal-hosein-232647253-16x9_0.jpg?VersionId=FWc5r1QdFmPFlpei_SX0rRVO6uMzoob2" alt="Victory Celebration">
+            </div>
+            <div class="news-content">
+                <span class="news-tag">Match Report</span>
+                <h3>Commanding 103-Run Victory over MI</h3>
+                <p>CSK secured a massive victory against arch-rivals Mumbai Indians at the Wankhede Stadium, with Sanju Samson's century (101* off 54) leading the way. Akeal Hosein then dismantled MI's batting lineup to complete a 103-run win.</p>
+                <a href="https://www.indiatoday.in/sports/cricket/story/mi-vs-csk-live-score-ipl-2026-mumbai-indians-chennai-super-kings-match-today-2900526-2026-04-23" class="read-more" target="_blank">Read Full Story &rarr;</a>
+            </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="news-card-lg animate-up delay-1">
+            <div class="news-image">
+                <img src="https://assets.khelnow.com/news/uploads/2026/04/Sanju-Samson-1.jpg" alt="Sanju Samson">
+            </div>
+            <div class="news-content">
+                <span class="news-tag">Player Form</span>
+                <h3>Sanju Samson's Stellar Form Continues</h3>
+                <p>Samson hit his second century of the season (101* off 54 balls) anchoring the innings perfectly and adapting to match situations with ease. His aggressive yet controlled batting sets the tone for CSK's powerhouse batting lineup.</p>
+                <a href="https://www.cricket.com.au/news/4492406/chennai-super-kings-beat-mumbai-indians-worst-ever-defeat-ipl-2026-match-report-scores-sanju-samson-century-akeal-hosein" class="read-more" target="_blank">Read Full Story &rarr;</a>
+            </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="news-card-lg animate-up delay-2">
+            <div class="news-image">
+                <img src="https://cricshots.com/wp-content/uploads/2026/04/415232.webp" alt="Bowling Action">
+            </div>
+            <div class="news-content">
+                <span class="news-tag">Team Analysis</span>
+                <h3>Bowling Attack Hits its Stride</h3>
+                <p>"Akeal Hosein should definitely play, along with Jamie Overton and Noor Ahmad" – Ambati Rayudu praised CSK's bowling combination ahead of the upcoming RCB clash, highlighting the team's well-rounded attack.</p>
+                <a href="https://cricshots.com/akeal-hosein-should-definitely-play-along-with-jamie-overton-and-noor-ahmad-ambati-rayudu/" class="read-more" target="_blank">Read Full Story &rarr;</a>
+            </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="news-card-lg animate-up">
+            <div class="news-image">
+                <img src="https://images.indianexpress.com/2026/04/ruturaj-gaikwad-bcci-creimas.jpg?w=1600" alt="Ruturaj Gaikwad">
+            </div>
+            <div class="news-content">
+                <span class="news-tag">Captain's Corner</span>
+                <h3>Ruturaj Gaikwad following CSK's third defeat in a row</h3>
+                <p>Ruturaj Gaikwad's captaincy put under the microscope after CSK's dismal start: ‘Waving his arms all the time’ - Former England skipper Michael Vaughan tore into Ruturaj Gaikwad following CSK's third defeat in a row. </p>
+                <a href="https://www.hindustantimes.com/cricket/ruturaj-gaikwads-captaincy-put-under-the-microscope-after-csks-dismal-start-waving-his-arms-all-the-time-101775473176343.html" class="read-more" target="_blank">Read Full Story &rarr;</a>
+            </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="news-card-lg animate-up delay-1">
+            <div class="news-image">
+                <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_wide_w_1280,q_70/lsci/db/PICTURES/CMS/415800/415834.6.jpg" alt="Ayush Mhatre">
+            </div>
+            <div class="news-content">
+                <span class="news-tag">Injury Update</span>
+                <h3>Ayush Mhatre ruled out</h3>
+                <p> Ayush Mhatre has been ruled out of IPL 2026 with a left hamstring injury.Mhatre, CSK's top run-scorer so far this season, will require a rehabilitation period of six to 12 weeks</p>
+                <a href="https://www.espncricinfo.com/story/ayush-mhatre-ruled-out-of-ipl-2026-due-to-hamstring-injury-1532970" class="read-more" target="_blank">Read Full Story &rarr;</a>
+            </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="news-card-lg animate-up delay-2">
+            <div class="news-image">
+                <img src="https://www.hindustantimes.com/ht-img/img/2026/04/26/550x309/PTI04-25-2026-000526B-0_1777218307284_1777218320077.jpg" alt="MS Dhoni">
+            </div>
+            <div class="news-content">
+                <span class="news-tag">Legend</span>
+                <h3>MS Dhoni’s IPL 2026 absence</h3>
+                <p>MS Dhoni’s IPL 2026 absence takes shocking turn as Stephen Fleming drops ‘second injury’ bomb - Speaking to the press in Chennai after the team's fifth defeat in IPL 2026, Stephen Fleming said that MS Dhoni had tweaked his calf again.</p>
+                <a href="https://www.hindustantimes.com/cricket/ms-dhoni-s-ipl-2026-absence-takes-shocking-turn-as-stephen-fleming-drops-second-injury-bomb-101777218271543.html" class="read-more" target="_blank">Read Full Story &rarr;</a>
+            </div>
+        </article>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="social-icons">
+                <a href="https://twitter.com/chennaiipl" class="icon-circle" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/chennaiipl" class="icon-circle" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/chennaisuperkings" class="icon-circle" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 All Rights Reserved by CSK HUB
+            </div>
+            <div class="footer-links">
+                <a href="term.html">Terms &amp; conditions</a> |
+                <a href="contact.html">Contact</a> |
+                <a href="privacy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
