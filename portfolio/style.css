@@ -716,10 +716,9 @@ section {
    9. PROJECTS SECTION
    ============================================================ */
 .project-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 20px;
@@ -734,12 +733,10 @@ section {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   transition: all var(--transition-slow);
-  min-width: 220px;
-  max-width: 280px;
-  flex: 1;
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
 
 .project-card::before {
@@ -1174,7 +1171,7 @@ footer {
   }
 
   .project-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
