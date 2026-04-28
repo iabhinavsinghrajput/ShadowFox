@@ -308,14 +308,16 @@ a {
   position: relative;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   color: var(--text-primary);
   background: var(--bg-card-hover);
 }
 
 .nav-link.active {
   color: var(--accent-1);
+  background: rgba(200, 0, 0, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(200, 0, 0, 0.4),
+              0 0 12px rgba(200, 0, 0, 0.15);
 }
 
 .nav-actions {

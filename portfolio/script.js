@@ -70,27 +70,45 @@ if (window.tsParticles) {
   tsParticles.load("particles", getParticlesConfig());
 }
 
-// ─── 3. MOBILE MENU ─────────────────────────────
+// ─── 3. MOBILE MENU + CLICK ACTIVE STATE ────────
 (function initMobileMenu() {
   const toggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+  const navLinksEl = document.getElementById("nav-links");
   const navbar = document.getElementById("navbar");
   const links = document.querySelectorAll(".nav-link");
 
   if (toggle && navbar) {
     toggle.addEventListener("click", () => {
       toggle.classList.toggle("active");
-      navLinks.classList.toggle("active");
+      navLinksEl.classList.toggle("active");
       navbar.classList.toggle("active");
     });
   }
 
   links.forEach((link) => {
-    link.addEventListener("click", () => {
-      if (navLinks.classList.contains("active")) {
-        navLinks.classList.remove("active");
-        toggle.classList.remove("active");
-        navbar.classList.remove("active");
+    link.addEventListener("click", (e) => {
+      const targetId = link.getAttribute("href");
+      if (targetId.startsWith("#")) {
+        e.preventDefault();
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          // Immediately mark clicked link as active
+          links.forEach((l) => l.classList.remove("active"));
+          link.classList.add("active");
+
+          // Scroll to center
+          targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+
+          // Close mobile menu if open
+          if (navLinksEl.classList.contains("active")) {
+            navLinksEl.classList.remove("active");
+            toggle.classList.remove("active");
+            navbar.classList.remove("active");
+          }
+        }
       }
     });
   });
