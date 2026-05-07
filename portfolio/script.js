@@ -26,9 +26,13 @@
 
 // ─── 2. PARTICLES BACKGROUND ────────────────────
 function getParticlesConfig() {
+  const isMobile = window.innerWidth < 768;
   return {
     particles: {
-      number: { value: 50, density: { enable: true, value_area: 900 } },
+      number: { 
+        value: isMobile ? 25 : 50, 
+        density: { enable: true, value_area: 900 } 
+      },
       color: {
         value: ["#c80000", "#ffffff", "#800000"],
       },
@@ -41,7 +45,7 @@ function getParticlesConfig() {
         out_mode: "out",
       },
       links: {
-        enable: true,
+        enable: !isMobile, // Disable links on mobile for performance
         distance: 140,
         color: "#ffffff",
         opacity: 0.06,
@@ -53,7 +57,7 @@ function getParticlesConfig() {
     },
     interactivity: {
       events: {
-        onhover: { enable: true, mode: "grab" },
+        onhover: { enable: !isMobile, mode: "grab" },
         onclick: { enable: true, mode: "push" },
       },
       modes: {
@@ -122,19 +126,17 @@ if (window.tsParticles) {
   const backToTopBtn = document.getElementById("back-to-top");
   const scrollProgressBar = document.getElementById("scroll-progress");
 
-  let isTicking = false;
+  // 1. Scroll Spy using IntersectionObserver (More Performant)
+  const observerOptions = {
+    root: null,
+    rootMargin: "-20% 0px -70% 0px", // Trigger when section is in the upper part of the viewport
+    threshold: 0
+  };
 
-  function update() {
-    const scrollY = window.scrollY;
-    
-    // Scroll Spy
-    const spyScrollY = scrollY + 120;
-    sections.forEach((section) => {
-      const top = section.offsetTop;
-      const height = section.offsetHeight;
-      const id = section.getAttribute("id");
-
-      if (spyScrollY >= top && spyScrollY < top + height) {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.getAttribute("id");
         navLinks.forEach((link) => {
           link.classList.remove("active");
           if (link.getAttribute("href") === "#" + id) {
@@ -143,15 +145,24 @@ if (window.tsParticles) {
         });
       }
     });
+  }, observerOptions);
 
-    //  Navbar Scroll
+  sections.forEach((section) => observer.observe(section));
+
+  // 2. Optimized Scroll Handler for Navbar and Progress
+  let isTicking = false;
+
+  function update() {
+    const scrollY = window.scrollY;
+
+    // Navbar Scroll
     if (scrollY > 50) {
       navbar.classList.add("scrolled");
     } else {
       navbar.classList.remove("scrolled");
     }
 
-    //  Back To Top
+    // Back To Top
     if (scrollY > 500) {
       if (backToTopBtn) backToTopBtn.classList.add("visible");
     } else {
