@@ -13,8 +13,6 @@
       setTimeout(() => {
         loader.style.opacity = "0";
         loader.style.visibility = "hidden";
-        // Init AOS only after loader is gone
-        AOS.init({ once: true, offset: 80, duration: 800 });
       }, 400);
     } else {
       count++;
