@@ -98,10 +98,10 @@ if (window.tsParticles) {
           links.forEach((l) => l.classList.remove("active"));
           link.classList.add("active");
 
-          // Scroll to center
+          // Scroll to top of section (respecting scroll-padding-top)
           targetSection.scrollIntoView({
             behavior: "smooth",
-            block: "center",
+            block: "start",
           });
 
           // Close mobile menu if open
