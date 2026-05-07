@@ -182,3 +182,18 @@ if (window.tsParticles) {
     });
   }
 })();
+
+// ─── 5. HIDDEN LINK HANDLER ─────────────────────
+(function initHiddenLinks() {
+  const links = document.querySelectorAll(".js-link");
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const url = link.getAttribute("data-href");
+      const target = link.getAttribute("target") || "_self";
+      if (url) {
+        window.open(url, target);
+      }
+    });
+  });
+})();
